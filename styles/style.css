@@ -1,59 +1,68 @@
+:root {
+  --mypurple: #C6ADDD; 
+  --mypink: #F4D8ED; 
+  --myorange: #ECA473;
+  --myblue: #556C9E;
+  font-family: Arial, Helvetica, sans-serif
+}
+
 
 .site {
   width: 80%;
+  padding-left: 10%;
   margin: auto;
-  background-color: navy;
+  /* background-color: var(--myblue); */
   max-width: 900px;
 }
 
-.social-icons-small-screen {
-  display: none;
+#header{
+  margin-top: 10%;
+  width: 100%;
+  margin-left: -13%;
+  padding-right: 13%;
+  height: 50vh;
+  background-color: lavender;
+  margin-bottom: 10%;
 }
 
-.mast-head{
-  display: relative;
-  background-repeat:no-repeat;
-  margin-top: 2%;
-  background-image: url('../header.jpg');
-  overflow: auto;
-  color: snow;
+#header div{
+  font-size: 45px;
+  padding-top: 20%;
+  padding-left: 15%;
+  /* padding-right: -5%; */
+  color: red;
+  /* background-color: lavender; */
+  font-weight: bold;
+  /* overflow: auto; */
+  line-height: 5px;
 }
 
-.yoan-intro {
-  float: left;
-  margin-left: 3%;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 1.35em;
-  width: 60%
+#header p{
+  margin-left: 60%;
+  font-size: 20px;
+  font-weight: normal;
+  color: grey;
+  cursor: cell;
+  line-height: 5px;
+}
+#header p:hover{
+  /* text-decoration: underline; */
+  color: orangered;
+  font-style: italic;
 }
 
-.yoan-intro h2{
-  font-size: 3em;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-.yoan-intro p {
-  background: rgba(24, 24, 58, 0.5);
-  border-radius: 10%
-
-}
-
-.mast-head img {
-  width: 150px;
-  border-radius: 50%;
-  margin-top: 3%;
-  margin-left: 7%;
-}
-
-.social-icons{
+.museum-tag{
   position: fixed;
-  top: 8px;
-  left: 8px;
-
+  top: 20%;
+  /* left: 8px; */
+  width: 15%;
+  height: 35%;
+  /* margin-top: 10%; */
+  margin-left: -15%;
+  background-color: var(--myorange)
 }
 
-.social-icons .fab {
+.museum-tag .fab {
   display: block !important;
   text-decoration: none;
   color: seashell;
@@ -61,24 +70,50 @@
   
 }
 
-.social-icons .fas {
+.museum-tag .fas {
   display: block !important;
   text-decoration: none;
   color: seashell;
   transition: .5s ease;
 }
 
-.social-icons .fab:hover{
+.museum-tag .fab:hover{
   cursor: pointer;
   transform: scale(1.07);
   color: goldenrod;
 }
 
-.social-icons .fas:hover{
+.museum-tag .fas:hover{
   cursor: pointer;
   transform: scale(1.07);
   color: goldenrod;
 }
+
+#categories{
+  font-size: 50px;
+  border-bottom: 1px solid;
+  padding-left: 30px;
+  margin-top: 5%;
+  /* margin-bottom: 5%; */
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: Helvetica, Arial,sans-serif;
+}
+
+#about-me{
+  width: 100%;
+  height: 50vh;
+  background-color: var(--mypink);
+}
+
+#projects{
+  width: 100%;
+  height: 100vh;
+  /* background-color: var(--mypink); */
+}
+
+/* ////////////////////////////////////////////////// */
+
 
 .yoan-content {
   line-height: 1.5em;
@@ -163,7 +198,7 @@
   color: snow;
 }
 
-@media (max-width:600px) {
+/* @media (max-width:600px) {
   .project a {
     font-size: 1em;
     box-shadow: 2px 2px 2px black;
@@ -178,11 +213,11 @@
     width: 100%;
   }
 
-  .social-icons{
+  .museum-tag{
     display: none;
   }
 
-  .social-icons-small-screen {
+  .museum-tag-small-screen {
     display: block;
   }
 
@@ -191,7 +226,7 @@
 
   }
 
-  .social-icons-small-screen .fab {
+  .museum-tag-small-screen .fab {
     text-decoration: none;
     margin-right: 10%;
     color: rgb(48, 45, 43);
@@ -199,22 +234,22 @@
     
   }
 
-  .social-icons-small-screen .fas {
+  .museum-tag-small-screen .fas {
     text-decoration: none;
     color:rgb(48, 45, 43);
     transition: .5s ease;
   }
 
-  .social-icons-small-screen .fab:hover{
+  .museum-tag-small-screen .fab:hover{
     cursor: pointer;
     transform: scale(1.07);
     color: goldenrod;
   }
 
-  .social-icons-small-screen .fas:hover{
+  .museum-tag-small-screen .fas:hover{
     cursor: pointer;
     transform: scale(1.07);
     color: goldenrod;
   } 
 
-}
+} */
