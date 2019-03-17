@@ -59,26 +59,39 @@
   height: 35%;
   /* margin-top: 10%; */
   margin-left: -15%;
-  background-color: var(--myorange)
+  background-color: var(--myblue)
 }
 
 #museum-social{
   width: 100%;
-  background-color: white;
-  height: 10vh;
-}
-
-.museum-tag .fab, .museum-tag .fas {
-  /* bottom: 0; */
+  height: 20%;
+  position: absolute;
+  bottom: 0;
   justify-content: center;
+  text-align: center;
+  background-color: var(--myorange);
+  /* height: 10vh; */
+  overflow: none;
+}
+/* #museum-social:hover{
+  background-color: red;
+
+} */
+
+
+#museum-social a {
+  /* overflow: none; */
+  /* bottom: 0; */
+  /* justify-content: center; */
   margin: 0 auto;
+  margin: 3%;
   /* display:inline; */
   /* flex: right; */
   /* width: 100%; */
   /* display: block !important; */
-  text-decoration: none;
-  color: seashell;
-  transition: .5s ease;
+  /* text-decoration: none; */
+  /* color: grey; */
+  /* transition: .5s ease; */
   
 }
 
