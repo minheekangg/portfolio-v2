@@ -62,32 +62,32 @@
   background-color: var(--myorange)
 }
 
-.museum-tag .fab {
-  display: block !important;
+#museum-social{
+  width: 100%;
+  background-color: white;
+  height: 10vh;
+}
+
+.museum-tag .fab, .museum-tag .fas {
+  /* bottom: 0; */
+  justify-content: center;
+  margin: 0 auto;
+  /* display:inline; */
+  /* flex: right; */
+  /* width: 100%; */
+  /* display: block !important; */
   text-decoration: none;
   color: seashell;
   transition: .5s ease;
   
 }
 
-.museum-tag .fas {
-  display: block !important;
-  text-decoration: none;
-  color: seashell;
-  transition: .5s ease;
-}
-
-.museum-tag .fab:hover{
+.museum-tag .fab:hover, .museum-tag .fas:hover{
   cursor: pointer;
   transform: scale(1.07);
-  color: goldenrod;
+  color: red
 }
 
-.museum-tag .fas:hover{
-  cursor: pointer;
-  transform: scale(1.07);
-  color: goldenrod;
-}
 
 #categories{
   font-size: 50px;
@@ -109,7 +109,12 @@
 #projects{
   width: 100%;
   height: 100vh;
-  /* background-color: var(--mypink); */
+}
+
+#description{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--mypink);
 }
 
 /* ////////////////////////////////////////////////// */
