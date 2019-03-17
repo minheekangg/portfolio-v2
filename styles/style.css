@@ -59,7 +59,7 @@
   height: 35%;
   /* margin-top: 10%; */
   margin-left: -15%;
-  background-color: var(--myblue)
+  background-color: lightgray;
 }
 
 #museum-social{
@@ -69,7 +69,8 @@
   bottom: 0;
   justify-content: center;
   text-align: center;
-  background-color: var(--myorange);
+  border: 1px solid var(--myorange);
+  background-color: white;
   /* height: 10vh; */
   overflow: none;
 }
