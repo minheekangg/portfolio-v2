@@ -22,25 +22,22 @@
   width: 100%;
   margin-left: -13%;
   padding-right: 13%;
-  height: 60vh;
+  /* height: 60vh; */
   background-color: lavender;
   margin-bottom: 10%;
-}
-
-#header span{
-  padding-left: 5%;
+  padding-bottom: 10%;
 }
 
 #header div{
   font-size: 6vh;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-left: 15%;
   /* padding-right: -5%; */
   color: red;
   /* background-color: lavender; */
   font-weight: bold;
   /* overflow: auto; */
-  line-height: 5px;
+  /* line-height: 5px; */
 }
 
 #header p{
@@ -55,6 +52,11 @@
   /* text-decoration: underline; */
   color: orangered;
   font-style: italic;
+}
+
+#welcome div{
+  display: flex;
+
 }
 
 .museum-tag{
@@ -87,7 +89,7 @@
   
   border: none;
   background-color: rgb(243, 242, 243);
-  height: 2vh;
+  /* height: 2vh; */
   font-size: 2.5vh;
   text-align: right;
   margin: 0;
@@ -410,16 +412,54 @@ footer div{
 
 /* ////////////////////////////////////////////////// */
 @media (max-width:1400px) {
-  .museum-tag h4{
-    font-size: 2.5vh;
-  }
-  /* .museum-tag{
-    height: 30%;
-  } */
-  .museum-tag button{
-    font-size: 2vh;
-  }
   #my-pic{
     width: 30%;
+  }
+}
+@media (max-width:950px) {
+
+}
+/* TABLET BREAK */
+@media only screen and (max-width: 600px) {
+  
+}
+/* PHONE BREAK */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  .museum-tag{
+    visibility: hidden;
+  }
+  .site{
+    width: 100%;
+    padding: 0
+  }
+  #header{
+    margin-left: -5%;
+  }
+  #categories{
+    margin-top: 10vh;
+    margin-bottom:6vh;
+  }
+
+  #header div{
+    padding-left: 10%;
+  }
+  #header p {
+    margin-left: 40%;
+  }
+  #about-page{
+    display: block;
+    margin: 0 auto;
+  }
+  #my-pic{
+    margin-top: 0;
+    width: 90%;
+  }
+  #my-description{
+    padding-left: 2vh;
+    width: 90%;
+    margin-top: 3%;
+  }
+  #single-description{
+    padding-left: 0;
   }
 }
