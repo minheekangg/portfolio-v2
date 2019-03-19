@@ -27,6 +27,10 @@
   margin-bottom: 10%;
 }
 
+#header span{
+  padding-left: 5%;
+}
+
 #header div{
   font-size: 6vh;
   padding-top: 20%;
@@ -405,58 +409,17 @@ footer div{
 
 
 /* ////////////////////////////////////////////////// */
-/* @media (max-width:600px) {
-  .project a {
-    font-size: 1em;
-    box-shadow: 2px 2px 2px black;
+@media (max-width:1400px) {
+  .museum-tag h4{
+    font-size: 2.5vh;
   }
-
-  .mast-head img {
-    border-radius: 0;
-    width: 100%;
-    margin: 0;
+  /* .museum-tag{
+    height: 30%;
+  } */
+  .museum-tag button{
+    font-size: 2vh;
   }
-  .site {
-    width: 100%;
+  #my-pic{
+    width: 30%;
   }
-
-  .museum-tag{
-    display: none;
-  }
-
-  .museum-tag-small-screen {
-    display: block;
-  }
-
-  .yoan-content .alternate {
-    display: none;
-
-  }
-
-  .museum-tag-small-screen .fab {
-    text-decoration: none;
-    margin-right: 10%;
-    color: rgb(48, 45, 43);
-    transition: .5s ease;
-    
-  }
-
-  .museum-tag-small-screen .fas {
-    text-decoration: none;
-    color:rgb(48, 45, 43);
-    transition: .5s ease;
-  }
-
-  .museum-tag-small-screen .fab:hover{
-    cursor: pointer;
-    transform: scale(1.07);
-    color: goldenrod;
-  }
-
-  .museum-tag-small-screen .fas:hover{
-    cursor: pointer;
-    transform: scale(1.07);
-    color: goldenrod;
-  } 
-
-} */
+}
