@@ -106,8 +106,8 @@
   background-color: blue;
   transform-origin: bottom left;
   transform: translateY(-100%) rotate(-90deg);
-  position: absolute
-  display: inline-block;;
+  position: absolute;
+  display: inline-block;
 }
 #museum-social{
   width: 100%;
