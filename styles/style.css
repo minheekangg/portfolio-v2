@@ -430,7 +430,7 @@ footer div{
   }
   .site{
     width: 100%;
-    padding: 0
+    padding: 1.4vh;
   }
   #header{
     margin-left: -5%;
@@ -461,5 +461,20 @@ footer div{
   }
   #single-description{
     padding-left: 0;
+  }
+  footer{
+        width: 130%;
+    margin-left: -3%;
+  }
+  #project-buttons{
+    width: 120%;
+    margin-left: -8%;
+  }
+  #footer-left{
+    visibility: hidden
+  }
+  #footer-right{
+    margin-left: -50%;
+    width: 80%;
   }
 }
