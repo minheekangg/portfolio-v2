@@ -1,0 +1,108 @@
+:root {
+  --mypurple: #C6ADDD; 
+  --mypink: #F4D8ED; 
+  --myorange: #ECA473;
+  --myblue: #556C9E;
+  --background-grey: #f6f6f3;
+  --canvas: #efe9db;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  --primary-font: 'Josefin Sans', sans-serif;
+  --secondary-font: 'Libre Baskerville', serif;
+
+  --mobile-bp : 500px;
+}
+
+body {
+    margin: 0;
+}
+
+.full-page{
+    padding: 10px;
+}
+
+.bg-grey {
+    background-color: var(--background-grey);
+}
+
+.bg-canvas {
+    background-color: var(--canvas);
+}
+
+#projects {
+    display: flex;
+    overflow-y: hidden;
+
+}
+
+
+h2 {
+    font-size: 150px;
+    font-family: var(--primary-font);
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    line-height:0;
+}
+
+.project {
+    border-right: 1px solid red;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 400px;
+    height: calc(100vh - 20px);
+    position: relative;
+
+    padding: 10px;
+
+}
+
+.project:first-child {
+    padding-left: 0;
+}
+
+.project:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.project-pic {
+    background-color: white;
+    border-bottom: 5px solid black;
+    width: 300px;
+    height: 250px;
+    margin: 30% auto 0;
+
+}
+
+p {
+    text-align: right;
+    margin-right: 10px;
+    font-family: var(--secondary-font);
+}
+
+
+@media only screen and (max-width: 500px) {
+    #projects {
+        display: inline-block;
+        max-width: calc(100vw - 10px);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .project {
+        width: calc(100vw - 20px);
+        height: 80vh;
+
+        border-right: none;
+        border-bottom: 1px solid red;
+        
+    }
+    .project:not(:first-child) {
+        margin-top: 10px;
+    }
+    .project:last-child {
+        border-bottom: none;
+    }
+  
+}
+
