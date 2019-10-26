@@ -6,8 +6,8 @@
   --background-grey: #f6f6f3;
   --canvas: #efe9db;
   /* font-family: Arial, Helvetica, sans-serif; */
-  --primary-font: 'Josefin Sans', sans-serif;
-  --secondary-font: 'Libre Baskerville', serif;
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Karla', sans-serif;
 
   --mobile-bp : 500px;
 }
@@ -76,9 +76,13 @@ h2 {
 
 p {
     text-align: right;
-    margin-right: 10px;
+    margin: 10px 10px 0;
     font-family: var(--secondary-font);
 }
+p:first-child{
+    margin-top: 10px;
+}
+
 
 
 @media only screen and (max-width: 500px) {
