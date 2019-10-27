@@ -1,31 +1,19 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     console.log('LOADED')
-    const buttons = document.querySelectorAll("#pin-category");
-    console.log(buttons)
-    buttons.forEach(button=>{
-        button.addEventListener("click", (e)=>{
-            handleClickedButton(e)
-        })
-    })
-
-
-    function handleClickedButton (e){
-        if (e.target.innerHTML === 'About'){
-            console.log(e.target.innerHTML)
-            // const about = document.getElementById('about-me').offset()
-            // console.log(about)
-            // window.animate(
-            //   {
-            //     scrollTop: about.offset().top
-            //   },
-            //   "slow"
-            // );
-        } else if (e.target.innerHTML === 'Projects')
-        console.log(e.target.innerHTML)
-    }
-
-
     
+
+    // scroll to the right;
+    // init controller
+    var controller = new ScrollMagic.Controller({ vertical: false });
+
+    // build tween
+    var tween = TweenMax.to(".project", 0.5, { backgroundColor: "green", width: "+=400" });
+
+    // build scene
+    new ScrollMagic.Scene({ triggerElement: ".project", duration: 500 })
+        .setTween(tween)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
 
 
 

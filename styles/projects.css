@@ -86,8 +86,9 @@ h3 {
     opacity: 1;
 }
 
-.project:hover > button {
-    color: red;
+.project:hover > p > span {
+    background-color: var(--peach);
+    transition-delay: 0.4s;
 }
 
 .project:first-child {
@@ -102,6 +103,11 @@ h3 {
 .title-box {
     background-color: var(--terracotta);
     position: relative;
+}
+
+.title-box:hover .fa {
+    font-size: 50px;
+    transition: 0.3s;
 }
 
 .project-pic {
@@ -121,12 +127,6 @@ p {
 }
 
 
-.highlight {
-    background-color: var(--peach);
-}
-
-
-
 @media only screen and (max-width: 500px) {
     #projects {
         display: inline-block;
@@ -135,17 +135,30 @@ p {
         padding-bottom: 30px;
     }
 
-    .project, .title-box {
+    .project {
         width: calc(100vw - 20px);
         height: 80vh;
 
         border-right: none;
         border-bottom: 1px solid red;
+        opacity: 1;
         
+    }
+
+    .title-box {
+        height: 80vh;
+    }
+
+    .fa i {
+        display: none;
     }
 
     .project:not(:first-child) {
         margin-top: 10px;
+    }
+
+    h2 {
+        width: 100%;
     }
 
     .project:last-child {
@@ -156,6 +169,10 @@ p {
         /* width: 100%; */
         height: 300px;
         margin-top: 80px;
+    }
+
+    .highlight {
+        background-color: var(--peach);
     }
   
 }
