@@ -24,4 +24,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         console.log(e.target.innerHTML)
     }
 
+
+    
+
+
+
+
 })
