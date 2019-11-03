@@ -22,6 +22,7 @@
 
 .full-page {
     margin: 0;
+    padding: 10px;
 }
 
 .bg-cotton {
@@ -31,8 +32,8 @@
 .primary, .secondary {
     max-width: 1000px;
     margin: auto;
-    padding: 10px;
     border: 1px solid var(--peach);
+    width: 100%;
 
     display: flex;
     min-height: 500px;
@@ -53,7 +54,9 @@ h3 {
 .left {
     flex: 0 0 50%;
     box-sizing: border-box;
+    padding: 0 10px;
 }
+
 
 .primary > .right {
     align-self: flex-end;
@@ -99,7 +102,7 @@ h2 {
 
 .secondary > .right {
     font-family: var(--secondary-font);
-    padding: 0 20px;
+    padding: 10px 20px;
     border: 10px solid var(--peach);
 }
 
@@ -158,4 +161,33 @@ h4 {
     margin-bottom: 5px;
     border: 1px solid ;
     padding: 5px;
+}
+
+@media screen and (max-width: 775px){
+    h3 {
+        font-size: 17vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+     .secondary {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 580px){
+    h3 {
+        font-size: 12vw;
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .primary {
+        display: inline-block;
+    }
+
+    h1 {
+        height: 0;
+    }
 }
