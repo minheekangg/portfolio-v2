@@ -22,14 +22,13 @@
 
 .full-page {
     margin: 0;
-    padding-top: 10%;
 }
 
 .bg-cotton {
     background-color: var(--cotton);
 }
 
-#main {
+.primary, .secondary {
     max-width: 1000px;
     margin: auto;
     padding: 10px;
@@ -38,30 +37,29 @@
     display: flex;
     min-height: 500px;
     font-family: var(--primary-font);
+    margin-bottom: 50px;
+    color: var(--terracotta);
 }
 
 h1 {
+    color: var(--cotton);
+}
+
+h3 {
     color: var(--terracotta);
     font-size: 150px;
 }
 
 .left {
-    background-color: var(--peach);
     flex: 0 0 50%;
     box-sizing: border-box;
 }
 
-.right {
+.primary > .right {
     align-self: flex-end;
     padding: 20px;
-    color: var(--terracotta); 
     font-family: var(--secondary-font);
     line-height: 15px;
-}
-
-
-.word-1{
-    width: 60px;
 }
 
 .translate:hover .eng{
@@ -80,4 +78,43 @@ h1 {
 .translate:hover .kor {
     opacity: 1;
     height: auto;;
+}
+
+.secondary {
+    padding: 0;
+}
+
+.secondary > .left {
+    background-color: var(--peach);
+    font-family: var(--secondary-font);
+    padding: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.secondary > .right {
+    font-family: var(--secondary-font);
+    padding: 20px;
+    border: 10px solid var(--peach);
+}
+
+h4 {
+    font-family: var(--secondary-font);
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech > div {
+    padding: 5px;
+    bordeR: 1px solid;
+    margin: 4px;
 }
