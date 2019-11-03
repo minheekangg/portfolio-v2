@@ -167,6 +167,7 @@ h4 {
     h3 {
         font-size: 17vw;
     }
+    h2 { font-size: 35px; }
 }
 
 @media screen and (max-width: 650px){
@@ -190,4 +191,6 @@ h4 {
     h1 {
         height: 0;
     }
+
+    h2 { font-size: 25px; }
 }
