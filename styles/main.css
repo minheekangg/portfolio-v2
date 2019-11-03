@@ -93,18 +93,18 @@ h3 {
 h2 {
     font-size: 50px;
     font-weight: bold;
-    margin-top: 0;
+    margin: 0;
 }
 
 .secondary > .right {
     font-family: var(--secondary-font);
-    padding: 20px;
+    padding: 0 20px;
     border: 10px solid var(--peach);
 }
 
 .secondary > .right > .translate {
     margin-top: 10px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -112,7 +112,7 @@ h2 {
 h4 {
     font-family: var(--secondary-font);
     margin-bottom: 5px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .tech {
@@ -126,8 +126,8 @@ h4 {
     margin: 4px;
 }
 
-.experience-extended {
-    color: var(--peach);
+.experience-extended, .open {
+    margin-left: 5px;
 }
 
 .experience-extended .show{
