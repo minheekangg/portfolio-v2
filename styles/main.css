@@ -88,6 +88,7 @@ h3 {
     background-color: var(--peach);
     font-family: var(--secondary-font);
     padding: 20px;
+    flex: 0 0 45%;
 }
 
 h2 {
@@ -103,16 +104,24 @@ h2 {
 }
 
 .secondary > .right > .translate {
-    margin-top: 10px;
-    /* text-decoration: underline; */
+    margin-top: 15px;
+    text-decoration: underline;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+.edu {
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 h4 {
     font-family: var(--secondary-font);
     margin-bottom: 5px;
-    /* text-decoration: underline; */
+    margin-top: 15px;
+    text-decoration: underline;
 }
 
 .tech {
