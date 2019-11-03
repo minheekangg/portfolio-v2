@@ -102,6 +102,13 @@ h2 {
     border: 10px solid var(--peach);
 }
 
+.secondary > .right > .translate {
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 h4 {
     font-family: var(--secondary-font);
     margin-bottom: 5px;
@@ -117,4 +124,29 @@ h4 {
     padding: 5px;
     bordeR: 1px solid;
     margin: 4px;
+}
+
+.experience-extended {
+    color: var(--peach);
+}
+
+.experience-extended .show{
+    display: none;
+}
+.experience-extended:hover{
+    border: 1px solid var(--peach) ;
+    padding: 5px;
+}
+.experience-extended:hover .show, .open>div{
+    display: block;
+    padding: 0 5px;
+    /* background-color: purple; */
+    text-decoration: none;
+    cursor: cell;
+}
+
+.open {
+    margin-bottom: 5px;
+    border: 1px solid ;
+    padding: 5px;
 }
