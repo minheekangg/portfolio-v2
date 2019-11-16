@@ -218,6 +218,7 @@ h4 {
 #projects > .title-box > h2{
     font-size: 30px;
     padding-top: 50px;
+    margin-left: 10px;
 }
 
 
@@ -285,13 +286,6 @@ h4 {
     position: relative;
 }
 
-.contact {
-    /* flex-direction: row-reverse; */
-    padding: 20px;
-    /* display: flex; */
-
-}
-
 .contact > .left {
     background-color: var(--cotton);
     /* color: var(--peach); */
@@ -299,6 +293,7 @@ h4 {
     /* font-family: var(--primary-font); */
     text-align: right;
     position: relative;
+    padding: 20px;
     
 }
 
@@ -307,12 +302,13 @@ h4 {
     border: none;
     width: 100%;
     position: relative;
+    /* padding: 20px; */
 }
 
 .contact-info {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 20px;
+    bottom: 20px;
     font-family: var(--secondary-font);
     color: var(--terracotta);
 }
