@@ -32,9 +32,10 @@
 .card {
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 50px;
     min-height: 500px;
     border: 1px solid var(--peach);
+    margin-bottom: calc(50vh - 250px);
+    margin-top: calc(50vh - 250px);
 }
 
 .primary, .secondary, .projects {
@@ -67,6 +68,10 @@ h3 {
     padding: 20px;
     font-family: var(--secondary-font);
     line-height: 15px;
+}
+
+.translate {
+    cursor: cell;
 }
 
 .translate:hover .eng{
