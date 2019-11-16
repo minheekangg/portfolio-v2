@@ -99,7 +99,7 @@ h3 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
 }
@@ -218,7 +218,7 @@ h4 {
 #projects > .title-box > h2{
     font-size: 30px;
     padding-top: 50px;
-    margin-left: 10px;
+    margin-left: 10
 }
 
 
@@ -231,6 +231,7 @@ h4 {
     min-height: 500px;
     position: relative;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .project:hover {
@@ -339,7 +340,6 @@ h4 {
     h3 {
         font-size: 17vw;
     }
-    h2 { font-size: 35px; }
 }
 
 @media screen and (max-width: 650px){
