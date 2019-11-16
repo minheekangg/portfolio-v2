@@ -269,10 +269,10 @@ h4 {
     position: relative;
 }
 
-.title-box:hover .fa {
+/* .title-box:hover .fa {
     font-size: 50px;
     transition: 0.3s;
-}
+} */
 
 .project-pic {
     background-color: white;
@@ -369,5 +369,11 @@ h4 {
 
     .project{
         opacity: 1;
+        flex-basis: 350px;
     }
+/* 
+    .experience-extended .show {
+        display: block;
+        padding: 0 5px;
+    } */
 }
