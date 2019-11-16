@@ -366,4 +366,8 @@ h4 {
     }
 
     h2 { font-size: 25px; }
+
+    .project{
+        opacity: 1;
+    }
 }
