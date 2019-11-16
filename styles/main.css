@@ -29,16 +29,19 @@
     background-color: var(--cotton);
 }
 
-.primary, .secondary, .tertiary {
+.card {
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 50px;
+    min-height: 500px;
     border: 1px solid var(--peach);
+}
+
+.primary, .secondary, .projects {
     width: 100%;
 
     display: flex;
-    min-height: 500px;
     font-family: var(--primary-font);
-    margin-bottom: 50px;
     color: var(--terracotta);
 }
 
@@ -164,14 +167,14 @@ h4 {
     padding: 5px;
 }
 
-.tertiary {
+.projects {
     background-color: var(--terracotta);
     font-family: var(--secondary-font);
     flex: 0 0 50%;
     position: relative;
 }
 
-.tertiary>div {
+.projects>div {
     font-family: var(--secondary-font);
     font-size: 30px;
     width: 400px;
@@ -183,17 +186,158 @@ h4 {
     
 }
 
-.tertiary:hover .fa {
+.fa {
     font-size: 50px;
-    transition: 0.3s;
-}
-
-i {
     color: var(--cotton);
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
+
+.projects:hover .fa {
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+
+#projects {
+    display: flex;
+    overflow-y: hidden;
+    font-family: var(--secondary-font);
+    position: relative;
+    border: 1px solid var(--terracotta);
+}
+
+#projects > .title-box {
+    flex: 0 0 30%;
+    position: relative;
+    color: white;
+    min-width: 200px;
+}
+
+#projects > .title-box > h2{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+
+.project {
+    border-right: 1px solid var(--terracotta);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 400px;
+    /* height: calc(100vh - 20px); */
+    min-height: 500px;
+    position: relative;
+    opacity: 0.5;
+}
+
+.project:hover {
+    flex-basis: 450px;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.project > p {
+    margin-left: 10px;
+}
+
+.project:hover > p > span {
+    background-color: var(--peach);
+    transition-delay: 0.4s;
+    margin-left: 10p
+}
+
+.project:first-child {
+    padding-left: 0;
+}
+
+.project:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.title-box {
+    background-color: var(--terracotta);
+    position: relative;
+}
+
+.title-box:hover .fa {
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.project-pic {
+    background-color: white;
+    border-bottom: 5px solid black;
+    width: 300px;
+    height: 250px;
+    margin: 50px auto 30px;
+
+}
+
+#projects > .project > h3 {
+    font-family: var(--primary-font);
+    left: 20px;
+    margin-bottom: 0;
+    color: black;
+    margin-top: 0;
+    position: relative;
+}
+
+.contact {
+    /* flex-direction: row-reverse; */
+    padding: 20px;
+    /* display: flex; */
+
+}
+
+.contact > .left {
+    background-color: var(--cotton);
+    /* color: var(--peach); */
+    color: var(--terracotta);
+    /* font-family: var(--primary-font); */
+    text-align: right;
+    position: relative;
+    
+}
+
+.contact > .right {
+    height: 450px;
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+.contact-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: var(--secondary-font);
+    color: var(--terracotta);
+}
+
+.contact-info a {
+    color: var(--terracotta);
+}
+
+.contact-info a:hover{
+    background-color: var(--peach);
+}
+
+.contact-info > div {
+    margin: 20px 0;
+}
+
+.my-img {
+    border: 1px solid var(--rose);
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+
 
 @media screen and (max-width: 775px){
     h3 {
