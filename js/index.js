@@ -18,10 +18,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     var tween = TweenMax.to(".title-box .fa", 0.3, { scale: 3.5, repeat: 5, yoyo: true });
 
-    // build scene and set duration to window height
     var scene = new ScrollMagic.Scene({ triggerElement: "#projects",  trigger: -90, duration: "50%" })
         .setTween(tween)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 
 

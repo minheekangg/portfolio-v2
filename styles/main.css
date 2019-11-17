@@ -1,12 +1,4 @@
 :root {
-  --mypurple: #C6ADDD; 
-  --mypink: #F4D8ED; 
-  --myorange: #ECA473;
-  --myblue: #556C9E;
-
-  --background-grey: #f6f6f3;
-  --canvas: #efe9db;
-
   /* new palette */
   --rose: #d8b8bd;
   --cotton: #f6f6f3;
@@ -245,11 +237,16 @@ h4 {
     opacity: 1;
 }
 
-.project > p {
+.project > a { 
+    text-decoration: none;
+    color: black;
+}
+
+.project > a > p {
     margin-left: 10px;
 }
 
-.project:hover > p > span {
+.project:hover > a > p > span {
     background-color: var(--peach);
     transition-delay: 0.4s;
     margin-left: 10p
@@ -269,10 +266,6 @@ h4 {
     position: relative;
 }
 
-/* .title-box:hover .fa {
-    font-size: 50px;
-    transition: 0.3s;
-} */
 
 .project-pic {
     background-color: white;
@@ -283,7 +276,7 @@ h4 {
 
 }
 
-#projects > .project > h3 {
+#projects > .project > a > h3 {
     font-family: var(--primary-font);
     left: 20px;
     margin-bottom: 0;
@@ -294,9 +287,7 @@ h4 {
 
 .contact > .left {
     background-color: var(--cotton);
-    /* color: var(--peach); */
     color: var(--terracotta);
-    /* font-family: var(--primary-font); */
     text-align: right;
     position: relative;
     padding: 20px;
@@ -308,7 +299,6 @@ h4 {
     border: none;
     width: 100%;
     position: relative;
-    /* padding: 20px; */
 }
 
 .contact-info {
@@ -371,9 +361,4 @@ h4 {
         opacity: 1;
         flex-basis: 350px;
     }
-/* 
-    .experience-extended .show {
-        display: block;
-        padding: 0 5px;
-    } */
 }
