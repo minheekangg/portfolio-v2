@@ -13,11 +13,12 @@
 }
 
 #project > h1 {
-    margin: 50px 0 50px;
+    margin: 50px 0 100px;
     text-align: center;
     font-family: var(--secondary-font);
     color: black;
     text-transform: uppercase;
+
 }
 
 #project > h1 > .num {
