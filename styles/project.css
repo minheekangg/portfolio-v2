@@ -17,10 +17,17 @@
 }
 
 #project > h1 {
-    margin: 50px;
+    margin: 50px 0 20px;
     text-align: center;
     font-family: var(--secondary-font);
     color: black;
+    text-transform: uppercase;
+}
+
+#project > .website-description > a {
+    font-size: 20px;
+    color: var(--terracotta);
+    font-style: var(--secondary-font);
 }
 
 .website {
@@ -38,21 +45,29 @@ iframe {
     width: 1024px;
     height: 700px;
     /* transform: scale(0.8); */
-    position: relative;
+    position: relative; 
+    box-shadow: 5px 10px 8px grey;
     
+}
+
+.mobile > iframe {
+    width: 300px;
+    height: 700px;
+
 }
 
 .website-description {
     border: none;
     margin-top: 50px;
+    margin-bottom: 50px;
     min-height: 0;
 }
 
 .website-description > h6 {
-    background-color: var(--terracotta);
-    color: var(--cotton);
+    background-color: var(--peach);
+    color: var(--terracotta);
     font-family: var(--secondary-font);
-    width: 80%;
+    /* width: 90%; */
     margin: 0 auto;
     font-size: 20px;
     margin-bottom: 14px;
@@ -61,10 +76,30 @@ iframe {
     padding: 5px;
 }
 
+#project > h5 {
+    max-width: 1000px;
+    /* background-color: var(--peach); */
+    color: var(--terracotta);
+    font-family: var(--secondary-font);
+    /* width: 90%; */
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+    line-height: 24px;
+    padding: 5px;
+}
+
+.mobile-warning {
+    font-style: var(--secondary-font);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 
 .website-description > p {
     font-family: var(--secondary-font);
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     line-height: 20px;
     margin-bottom: 8px;
