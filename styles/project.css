@@ -42,6 +42,7 @@
     max-width: 1000px;
     margin: auto;
     display: flex;
+    margin-bottom: 50px;
 }
 
 iframe {
