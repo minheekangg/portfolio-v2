@@ -4,6 +4,10 @@
   --cotton: #f6f6f3;
   --peach: #eac5b4;
   --terracotta: #ce4d12;
+  /* --rose: #d8b8bd;
+  --cotton: #f6f6f3;
+  --peach: #eac5b4;
+  --terracotta: #ce4d12; */
   /* new palette */
   
   --primary-font: 'Playfair Display', serif;
@@ -38,10 +42,6 @@
     color: var(--terracotta);
 }
 
-.primary.card {
-    margin-top: calc(50vh - 350px);
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -56,10 +56,13 @@
 }
 
 .nav > a {
-    color: rgb(0,0,0,0.3);
     font-size: 20px;
     text-decoration: none;
-    font-style: var(--secondary-font);
+    background-color: var(--peach);
+    color: var(--terracotta);
+    /* color: black; */
+    font-style: var( --primary-font);
+    padding: 5px 10px;
 }
 
 
