@@ -1,0 +1,137 @@
+:root {
+  /* new palette */
+  --rose: #d8b8bd;
+  --cotton: #f6f6f3;
+  --peach: #eac5b4;
+  --terracotta: #ce4d12;
+  /* new palette */
+  
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Karla', sans-serif;
+
+  --mobile-bp : 500px;
+}
+
+#project > h1 {
+    margin: 50px 0 100px;
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: black;
+    text-transform: uppercase;
+
+}
+
+#project > h1 > .num {
+    font-family: var(--primary-font);
+    font-size: 150px;
+    color: black;
+    margin-top: 0;
+    position: relative;
+    line-height: 0;
+    color: var(--terracotta);
+    opacity: 0.3
+}
+
+#project > .website-description > a {
+    font-size: 20px;
+    color: var(--terracotta);
+    font-style: var(--secondary-font);
+}
+
+.website {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+iframe {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 1024px;
+    height: 700px;
+    /* transform: scale(0.8); */
+    position: relative; 
+    box-shadow: 5px 10px 8px grey;
+    
+}
+
+.mobile > iframe {
+    width: 300px;
+    height: 600px;
+
+}
+
+.website-description {
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 0;
+}
+
+.website-description > h6 {
+    color: var(--terracotta);
+    font-family: var(--secondary-font);
+    /* width: 90%; */
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+    line-height: 24px;
+    padding: 5px;
+}
+
+#project > h5 {
+    max-width: 1000px;
+    color: var(--terracotta);
+    font-family: var(--secondary-font);
+    /* width: 90%; */
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+    line-height: 24px;
+    padding: 5px;
+}
+
+.mobile-warning {
+    font-style: var(--secondary-font);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px 12px;
+    display: none;
+    max-width: 1000px;
+    /* background-color: var(--peach); */
+    color: var(--terracotta);
+    font-family: var(--secondary-font);
+    /* width: 90%; */
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+    line-height: 24px;
+    padding: 5px;
+}
+
+
+.website-description > p {
+    font-family: var(--secondary-font);
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 650px){
+    h5 {
+        display: none;
+    }
+     .mobile {
+        display: none;
+    }
+    .mobile-warning {
+        display: block;
+    }
+}

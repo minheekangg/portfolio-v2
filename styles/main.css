@@ -1,0 +1,397 @@
+:root {
+  /* new palette */
+  --rose: #d8b8bd;
+  --cotton: #f6f6f3;
+  --peach: #eac5b4;
+  --terracotta: #ce4d12;
+  /* --rose: #d8b8bd;
+  --cotton: #f6f6f3;
+  --peach: #eac5b4;
+  --terracotta: #ce4d12; */
+  /* new palette */
+  
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Karla', sans-serif;
+
+  --mobile-bp : 500px;
+}
+
+.full-page {
+    margin: 0;
+    padding: 10px;
+}
+
+.bg-cotton {
+    background-color: var(--cotton);
+}
+
+.card {
+    max-width: 1000px;
+    margin: auto;
+    min-height: 500px;
+    border: 1px solid var(--peach);
+    margin-bottom: calc(50vh - 250px);
+    margin-top: calc(50vh - 250px);
+}
+
+.primary, .secondary, .projects {
+    width: 100%;
+
+    display: flex;
+    font-family: var(--primary-font);
+    color: var(--terracotta);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    margin: 0;
+    background-color: var(--cotton);
+    z-index: 9999;
+    font-size: 16px;
+
+}
+
+.nav > a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: var(--peach);
+    color: var(--terracotta);
+    /* color: black; */
+    font-style: var( --primary-font);
+    padding: 5px 10px;
+}
+
+
+h1 {
+    color: var(--cotton);
+    margin: 0;
+    height:0;
+}
+
+h3 {
+    color: var(--terracotta);
+    font-size: 150px;
+}
+
+.left {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+
+.primary > .right {
+    align-self: flex-end;
+    padding: 20px;
+    font-family: var(--secondary-font);
+    line-height: 15px;
+}
+
+.translate {
+    cursor: cell;
+}
+
+.translate:hover .eng{
+    font-style: var(--primary-font);
+    display: none;
+}
+
+.kor {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    width: 140px;
+}
+
+.translate:hover .kor {
+    opacity: 1;
+    height: auto;;
+}
+
+.secondary {
+    padding: 0;
+}
+
+.secondary > .left {
+    background-color: var(--peach);
+    font-family: var(--secondary-font);
+    padding: 20px;
+    flex: 0 0 45%;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.secondary > .right {
+    font-family: var(--secondary-font);
+    padding: 10px 20px;
+    border: 10px solid var(--peach);
+}
+
+.secondary > .right > .translate {
+    margin-top: 15px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edu {
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h4 {
+    font-family: var(--secondary-font);
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech > div {
+    padding: 5px;
+    bordeR: 1px solid;
+    margin: 4px;
+}
+
+.experience-extended, .open {
+    margin-left: 5px;
+}
+
+.experience-extended .show{
+    display: none;
+}
+.experience-extended:hover{
+    border: 1px solid var(--peach) ;
+    padding: 5px;
+}
+.experience-extended:hover .show, .open>div{
+    display: block;
+    padding: 0 5px;
+    /* background-color: purple; */
+    text-decoration: none;
+    cursor: cell;
+}
+
+.open {
+    margin-bottom: 5px;
+    border: 1px solid ;
+    padding: 5px;
+}
+
+.projects {
+    background-color: var(--terracotta);
+    font-family: var(--secondary-font);
+    flex: 0 0 50%;
+    position: relative;
+}
+
+.projects>div {
+    font-family: var(--secondary-font);
+    font-size: 30px;
+    width: 400px;
+    margin: 0;
+    line-height: 130px;
+    color: var(--cotton);
+    overflow-wrap: break-word;
+    padding: 20px;
+    
+}
+
+.fa {
+    font-size: 50px;
+    color: var(--cotton);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.projects:hover .fa {
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+
+#projects {
+    display: flex;
+    overflow-y: hidden;
+    font-family: var(--secondary-font);
+    position: relative;
+    border: 1px solid var(--terracotta);
+}
+
+#projects > .title-box {
+    flex: 0 0 30%;
+    position: relative;
+    color: white;
+    min-width: 200px;
+}
+
+#projects > .title-box > h2{
+    font-size: 30px;
+    padding-top: 50px;
+    margin-left: 10
+}
+
+
+.project {
+    border-right: 1px solid var(--terracotta);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 400px;
+    /* height: calc(100vh - 20px); */
+    min-height: 500px;
+    position: relative;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.project:hover {
+    flex-basis: 450px;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.project > a { 
+    text-decoration: none;
+    color: black;
+}
+
+.project > a > p {
+    margin-left: 10px;
+}
+
+.project:hover > a > p > span {
+    background-color: var(--peach);
+    transition-delay: 0.4s;
+    margin-left: 10p
+}
+
+.project:first-child {
+    padding-left: 0;
+}
+
+.project:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.title-box {
+    background-color: var(--terracotta);
+    position: relative;
+}
+
+
+.project-pic {
+    background-color: white;
+    border-bottom: 5px solid black;
+    width: 300px;
+    height: 250px;
+    margin: 50px auto 30px;
+
+}
+
+.project-pic > img {
+    width: 100%;
+}
+
+#projects > .project > a > h3 {
+    font-family: var(--primary-font);
+    left: 20px;
+    margin-bottom: 0;
+    color: black;
+    margin-top: 0;
+    position: relative;
+}
+
+.contact > .left {
+    background-color: var(--cotton);
+    color: var(--terracotta);
+    text-align: right;
+    position: relative;
+    padding: 20px;
+    
+}
+
+.contact > .right {
+    height: 450px;
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+.contact-info {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-family: var(--secondary-font);
+    color: var(--terracotta);
+}
+
+.contact-info a {
+    color: var(--terracotta);
+}
+
+.contact-info a:hover{
+    background-color: var(--peach);
+}
+
+.contact-info > div {
+    margin: 20px 0;
+}
+
+.my-img {
+    border: 1px solid var(--rose);
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+
+
+@media screen and (max-width: 775px){
+    h3 {
+        font-size: 17vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+     .secondary {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 580px){
+    h3 {
+        font-size: 12vw;
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .primary {
+        display: inline-block;
+    }
+
+    h2 { font-size: 25px; }
+
+    .project{
+        opacity: 1;
+        flex-basis: 350px;
+    }
+}
