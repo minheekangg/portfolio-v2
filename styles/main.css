@@ -307,6 +307,7 @@ h4 {
 
 .project-pic > img {
     width: 100%;
+    height: 100%;
 }
 
 #projects > .project > a > h3 {
