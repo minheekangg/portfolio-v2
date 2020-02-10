@@ -45,7 +45,12 @@
     margin-bottom: 50px;
 }
 
-iframe {
+.website.multi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+iframe, img {
     border: 1px solid black;
     display: block;
     margin: 0 auto;
@@ -55,6 +60,15 @@ iframe {
     position: relative; 
     box-shadow: 5px 10px 8px grey;
     
+}
+.img-capture {
+    width:100%;
+    margin: 15px 0;
+}
+.multi > p {
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    margin-top: 0;
 }
 
 .mobile > iframe {
