@@ -64,13 +64,16 @@ iframe, img {
 .img-capture {
     width:100%;
     margin: 15px 0;
+    height: auto;
 }
 .multi > p {
     font-size: 14px;
     font-family: var(--secondary-font);
     margin-top: 0;
 }
-
+video {
+    width: 100%;
+}
 .mobile > iframe {
     width: 300px;
     height: 600px;
