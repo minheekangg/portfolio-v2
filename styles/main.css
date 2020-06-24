@@ -314,7 +314,7 @@ h4 {
     font-family: var(--primary-font);
     left: 20px;
     margin-bottom: 0;
-    color: black;
+    color: var(--black);
     margin-top: 0;
     position: relative;
 }

@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    
     var controller = new ScrollMagic.Controller();
-
     var revealElements = document.getElementsByClassName("card");
  
     for (var i = 0; i < revealElements.length; i++) { 
@@ -24,4 +22,63 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 
+
+    const projectsArray = [
+        {
+            link: 'projects/skift-subscription.html',
+            isSoloProject: false,
+            where: 'Skift',
+            image: 'images/skift-subthumb.png'
+        },
+        {
+            link: 'projects/skift-skifternet.html',
+            isSoloProject: false,
+            where: 'Skift',
+            image: 'images/skifternet-thumb.png'
+        },
+        {
+            link: 'projects/capsule-wardrobe.html',
+            isSoloProject: true,
+            where: 'Flatiron',
+            image: 'images/capsule-thumb.png'
+        },
+        {
+            link: 'projects/sgf-magazine.html',
+            isSoloProject: true,
+            where: 'Skift',
+            image: 'images/skiftmag-thumb.png'
+        },
+        {
+            link: 'projects/skiftx-brandusa.html',
+            isSoloProject: true,
+            where: 'Skift',
+            image: 'images/brandusa-thumb.png'
+        },
+        {
+            link: 'projects/spend-abroad.html',
+            isSoloProject: true,
+            where: 'Skift',
+            image: 'images/spend_abroad.png'
+        },
+        {
+            link: 'projects/korean101.html',
+            isSoloProject: true,
+            where: 'Flatiron',
+            image: 'images/korean101-thumb.png'
+        },
+        
+    ]
+    var projectSection = document.querySelector('#projects');
+    projectSection.innerHTML += projectsArray.map((project, idx) => {
+        return `<div class="project">
+                    <a href=${project.link} >
+                        <p><span>${project.isSoloProject ? 'solo project' : 'team project'}</span></p>
+                        <p>@${project.where || ""}</p>
+                        <div class="project-pic"><img src=${project.image} /></div>
+                        <h3> ${idx + 1} </h3>
+                    </a>
+                </div>`
+    }).join("")
+
+    
 })
