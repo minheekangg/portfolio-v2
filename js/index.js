@@ -25,45 +25,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const projectsArray = [
         {
+            link: 'projects/travel-blog.html',
+            isSoloProject: true,
+            where: 'Personal Project',
+            image: 'images/travel-thumb.png'
+        },
+        {
             link: 'projects/skift-subscription.html',
             isSoloProject: false,
-            where: 'Skift',
+            where: '@Skift',
             image: 'images/skift-subthumb.png'
         },
         {
             link: 'projects/skift-skifternet.html',
             isSoloProject: false,
-            where: 'Skift',
+            where: '@Skift',
             image: 'images/skifternet-thumb.png'
         },
         {
             link: 'projects/capsule-wardrobe.html',
             isSoloProject: true,
-            where: 'Flatiron',
+            where: '@Flatiron',
             image: 'images/capsule-thumb.png'
         },
         {
             link: 'projects/sgf-magazine.html',
             isSoloProject: true,
-            where: 'Skift',
+            where: '@Skift',
             image: 'images/skiftmag-thumb.png'
         },
         {
             link: 'projects/skiftx-brandusa.html',
             isSoloProject: true,
-            where: 'Skift',
+            where: '@Skift',
             image: 'images/brandusa-thumb.png'
         },
         {
             link: 'projects/spend-abroad.html',
             isSoloProject: true,
-            where: 'Skift',
+            where: '@Skift',
             image: 'images/spend_abroad.png'
         },
         {
             link: 'projects/korean101.html',
             isSoloProject: true,
-            where: 'Flatiron',
+            where: '@Flatiron',
             image: 'images/korean101-thumb.png'
         },
         
@@ -73,7 +79,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         return `<div class="project">
                     <a href=${project.link} >
                         <p><span>${project.isSoloProject ? 'solo project' : 'team project'}</span></p>
-                        <p>@${project.where || ""}</p>
+                        <p>${project.where || ""}</p>
                         <div class="project-pic"><img src=${project.image} /></div>
                         <h3> ${idx + 1} </h3>
                     </a>
